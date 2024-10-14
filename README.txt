@@ -1,6 +1,3 @@
-Here’s the revised README file with numbered items written without bold formatting:
-
----
 
 # Panda Virtual Assistant
 
