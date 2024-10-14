@@ -1,0 +1,25 @@
+2024-10-10 19:38:00,766 - INFO - Wikipedia: language=en, user_agent: AssistantBot/1.0 (Wikipedia-API/0.7.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2024-10-10 19:38:00,961 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-10 19:38:00,961 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:38:00,961 - INFO -  * Restarting with stat
+2024-10-10 19:38:04,864 - INFO - Wikipedia: language=en, user_agent: AssistantBot/1.0 (Wikipedia-API/0.7.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2024-10-10 19:38:04,906 - WARNING -  * Debugger is active!
+2024-10-10 19:38:04,911 - INFO -  * Debugger PIN: 571-848-028
+2024-10-10 19:38:04,949 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:04] "GET / HTTP/1.1" 200 -
+2024-10-10 19:38:05,309 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:05] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2024-10-10 19:38:05,397 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-10 19:38:05,579 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:05] "[36mGET /static/panda.png HTTP/1.1[0m" 304 -
+2024-10-10 19:38:05,591 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:05] "[36mGET /static/mic-icon.png HTTP/1.1[0m" 304 -
+2024-10-10 19:38:05,613 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:05] "[36mGET /static/user-avatar.png HTTP/1.1[0m" 304 -
+2024-10-10 19:38:09,215 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:38:46,924 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:46] "GET / HTTP/1.1" 200 -
+2024-10-10 19:38:46,962 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-10 19:38:47,015 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2024-10-10 19:38:47,230 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:47] "[36mGET /static/user-avatar.png HTTP/1.1[0m" 304 -
+2024-10-10 19:38:47,259 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:47] "[36mGET /static/panda.png HTTP/1.1[0m" 304 -
+2024-10-10 19:38:47,322 - INFO - 127.0.0.1 - - [10/Oct/2024 19:38:47] "[36mGET /static/mic-icon.png HTTP/1.1[0m" 304 -
+2024-10-10 19:42:40,922 - INFO - 127.0.0.1 - - [10/Oct/2024 19:42:40] "GET /static/css/theme1.css HTTP/1.1" 200 -
+2024-10-10 19:44:30,356 - INFO - 127.0.0.1 - - [10/Oct/2024 19:44:30] "[36mGET /static/css/theme2.css HTTP/1.1[0m" 304 -
+2024-10-10 19:46:45,525 - DEBUG - Handling command: .......
+2024-10-10 19:46:45,525 - INFO - 127.0.0.1 - - [10/Oct/2024 19:46:45] "POST /voice-command HTTP/1.1" 200 -

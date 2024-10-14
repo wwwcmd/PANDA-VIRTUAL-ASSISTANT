@@ -1,0 +1,302 @@
+/* Cool Blue Theme */
+
+/* Reset and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for the container */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196F3; /* Blue header */
+    color: white;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em; /* Header size */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center; /* Align user profile items */
+}
+
+.user-profile img {
+    border-radius: 50%; /* Circular avatar */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Space between avatar and name */
+}
+
+/* Main Styles */
+main {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px; /* Padding around the main content */
+    overflow: hidden; /* Contain gradient */
+}
+
+.background {
+    position: absolute; /* Positioned behind other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #42A5F5, #64B5F6, #90CAF9, #BBDEFB, #42A5F5); /* Colorful gradient */
+    background-size: 400% 400%; /* Enable smooth animation */
+    animation: gradient 15s ease infinite; /* Animation for background */
+    z-index: -1; /* Behind main content */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Assistant Container */
+.assistant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Width of the assistant container */
+}
+
+/* Panda Avatar */
+.panda-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Avatar size */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(135deg, #42A5F5, #64B5F6, #90CAF9, #BBDEFB); /* Blue gradient background */
+}
+
+.panda-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Circular avatar */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.panda-avatar:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.panda-avatar:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1); /* Brightness effect on hover */
+}
+
+/* Response Display */
+.response-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-height: 300px; /* Max height for the response area */
+    overflow-y: auto; /* Scrollable if overflow */
+    margin: 20px 0; /* Vertical spacing */
+    background-color: white; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Input Area Styles */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Width of the input area */
+    margin-top: 20px; /* Top margin */
+}
+
+.input-area form {
+    display: flex; /* Flexbox for input and button */
+    align-items: center;
+    width: 100%; /* Full width */
+}
+
+.input-area input {
+    flex: 1; /* Flex-grow */
+    padding: 10px; /* Padding for input */
+    margin: 0 10px; /* Horizontal spacing */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.input-area button {
+    background-color: #2196F3; /* Blue button */
+    border: none; /* No border */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Inline-block button */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Padding */
+    margin-left: 10px; /* Left margin */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.input-area button img {
+    width: 50px; /* Image width in button */
+    border-radius: 50%; /* Circular image */
+}
+
+.input-area button:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+.input-area .mic-button {
+    margin-bottom: 10px; /* Bottom margin for mic button */
+}
+
+.input-area .mic-button img {
+    width: 60px; /* Mic button image size */
+    border-radius: 50%; /* Circular image */
+}
+
+.input-area .mic-button:hover {
+    background-color: transparent; /* No background on hover */
+}
+
+.input-area .mic-button:hover img {
+    filter: brightness(1.2); /* Brightness effect on mic button hover */
+}
+
+/* Info Cards */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px; /* Top margin for cards */
+    gap: 30px; /* Added gap for spacing between cards */
+}
+
+.card {
+    background-color: white; /* Card background */
+    padding: 20px; /* Card padding */
+    border: 1px solid #ccc; /* Card border */
+    width: 30%; /* Card width */
+    text-align: center; /* Center text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+/* Shortcut Buttons */
+.shortcut-buttons {
+    display: flex;
+    justify-content: space-around; /* Space around buttons */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Top margin */
+    gap: 20px; /* Space between shortcut buttons */
+}
+
+.shortcut {
+    background-color: #2196F3; /* Blue shortcut buttons */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.shortcut:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    padding: 30px; /* Increased padding */
+    background-color: #e6f0e6; /* Light green */
+    color: #333; /* Darker text color */
+    text-align: center; /* Center text */
+    border-top: 2px solid #cccccc; /* Darker border */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: relative; /* Stacking context */
+    z-index: 2; /* Above background */
+    width: 100%; /* Full-width footer */
+}
+
+/* Footer Actions */
+.footer-actions {
+    display: flex; /* Flexbox for actions */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    justify-content: center; /* Center actions */
+    align-items: center; /* Center actions */
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.footer-actions button {
+    background-color: #4CAF50; /* Green */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Prominent look */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+    font-weight: bold; /* Bold text */
+}
+
+.footer-actions button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .info-cards, .shortcut-buttons {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center; /* Center cards */
+        width: 100%; /* Full width */
+        gap: 20px; /* Space between stacked cards */
+    }
+
+    .card, .shortcut {
+        width: 90%; /* Wider on mobile */
+        margin-bottom: 15px; /* Bottom margin for each card */
+    }
+}
